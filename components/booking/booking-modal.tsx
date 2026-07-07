@@ -103,7 +103,7 @@ export function BookingModal() {
             </select>
           </div>
 
-          <div className="space-y-2">
+          {/* <div className="space-y-2">
             <Label htmlFor="booking-plan">{bookingModalData.fields.plan}</Label>
             <select
               id="booking-plan"
@@ -117,7 +117,7 @@ export function BookingModal() {
                 </option>
               ))}
             </select>
-          </div>
+          </div> */}
 
           {error && <p className="text-sm text-red-600">{error}</p>}
 

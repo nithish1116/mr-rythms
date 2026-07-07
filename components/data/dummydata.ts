@@ -349,7 +349,7 @@ export const footerData = {
     },
     {
       icon: Mail,
-      value: "hello@arjunmusictutor.com",
+      value: "dummymusicmail.com",
     },
     {
       icon: MapPin,
@@ -405,16 +405,14 @@ export const bookingModalData = {
   },
   instruments: [
     "Drums",
-    "Guitar",
+    "Pads",
     "Piano",
-    "Flute",
-    "Saxophone",
-    "Vocals",
+    "Vocal",
   ],
-  plans: [
-    "Free Trial",
-    "Drumming Basics",
-    "Pads Training",
-    "Vocal Training",
-  ],
+  // plans: [
+  //   "Free Trial",
+  //   "Drumming Basics",
+  //   "Pads Training",
+  //   "Vocal Training",
+  // ],
 };
