@@ -1,3 +1,4 @@
+import { BookingWrapper } from "@/components/booking/booking-wrapper";
 import { Navbar } from "@/components/sections/navbar";
 import Hero from "@/components/sections/hero";
 import { MarqueeFeatures } from "@/components/sections/marquee-features";
@@ -15,22 +16,24 @@ import Footer from "@/components/sections/footer";
 
 const Home = () => {
   return (
-    <main className="overflow-x-hidden">
-      <Navbar />
-      <Hero />
-      <MarqueeFeatures />
-      <WhyHome />
-      <Instruments />
-      <HowItWorks />
-      <Courses />
-      <Benefits />
-      <Tutor />
-      <Gallery />
-      <Testimonials />
-      <FAQ />
-      <CTA />
-      <Footer />
-    </main>
+    <BookingWrapper>
+      <main className="overflow-x-hidden">
+        <Navbar />
+        <Hero />
+        <MarqueeFeatures />
+        <WhyHome />
+        <Instruments />
+        <HowItWorks />
+        <Courses />
+        <Benefits />
+        <Tutor />
+        <Gallery />
+        <Testimonials />
+        <FAQ />
+        <CTA />
+        <Footer />
+      </main>
+    </BookingWrapper>
   );
 }
 export default Home;

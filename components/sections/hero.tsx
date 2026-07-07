@@ -1,4 +1,5 @@
 import { CheckCircle2 } from "lucide-react";
+import { BookTrialButton } from "@/components/booking/book-trial-button";
 import { Button } from "@/components/ui/button";
 import { heroData } from "../data/dummydata";
 
@@ -45,10 +46,10 @@ const Hero = () => {
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
-            <Button size="lg">
+            <BookTrialButton size="lg">
               {heroData?.buttons?.primary?.label}
               <PrimaryIcon className="ml-2 h-4 w-4" />
-            </Button>
+            </BookTrialButton>
 
             <Button size="lg" variant="outline">
               {heroData?.buttons?.secondary?.label}

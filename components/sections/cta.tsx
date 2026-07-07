@@ -1,5 +1,5 @@
+import { BookTrialButton } from "@/components/booking/book-trial-button";
 import { ctaData } from "../data/dummydata";
-import { Button } from "../ui/button";
 
 
 const CTA = () => {
@@ -22,12 +22,10 @@ const CTA = () => {
               </p>
             </div>
 
-            <Button size="lg" asChild>
-              <a href={ctaData?.button?.href}>
-                {ctaData?.button?.label}
-                <ButtonIcon className="ml-2 h-4 w-4" />
-              </a>
-            </Button>
+            <BookTrialButton size="lg">
+              {ctaData?.button?.label}
+              <ButtonIcon className="ml-2 h-4 w-4" />
+            </BookTrialButton>
           </div>
         </div>
       </div>

@@ -102,7 +102,7 @@ export const tutorData = {
   badge: "About Me",
 
   title: {
-    line1: "Hi, I'm Shalom",
+    line1: `Hi, ${navbarData.logo.title}`,
     line2: "Your Music Tutor",
   },
 
@@ -118,7 +118,7 @@ export const tutorData = {
   stats: [
     {
       icon: Clock,
-      value: "4+",
+      value: "5+",
       label: "Years Experience",
     },
     {
@@ -206,13 +206,13 @@ export const coursesData = {
         "Rhythms, beats & songs",
         "Practice sheets included",
       ],
-      featured: true,
+      featured: false,
     },
     {
       icon: Piano,
       name: "Pads Training",
       level: "All Levels · Age 5+",
-      price: "₹1,999",
+      price: "₹7,999",
       period: "/ month",
       features: [
         "4 offline or online classes / month",
@@ -299,8 +299,8 @@ export const footerData = {
 
   logo: {
     icon: Music3,
-    title: "Arjun Sharma",
-    subtitle: "MUSIC TUTOR",
+    title: `${navbarData.logo.title}`,
+    subtitle: `${navbarData.logo.subtitle}`,
   },
 
   description:
@@ -336,17 +336,16 @@ export const footerData = {
   ],
 
   instruments: [
-    { label: "Guitar", href: "#guitar" },
-    { label: "pads", href: "#piano" },
+    { label: "drums", href: "#drum" },
+    { label: "pads", href: "#pads" },
     { label: "piano", href: "#piano" },
-    { label: "Flute", href: "#flute" }
     
   ],
 
   contact: [
     {
       icon: Phone,
-      value: "+91 98765 43210",
+      value: "+91 9550996199",
     },
     {
       icon: Mail,
@@ -379,5 +378,43 @@ export const footerData = {
       label: "Terms & Conditions",
       href: "/terms",
     },
+  ],
+};
+
+export const whatsappConfig = {
+  phone: "919550996199",
+  defaultMessage: "Hi! I'd like to book a music trial at Mr Rythms.",
+};
+
+export const bookingModalData = {
+  title: "Book Your Free Trial",
+  description:
+    "Fill in your details and we'll connect with you on WhatsApp to schedule your session.",
+  submitLabel: "Continue on WhatsApp",
+  validationMessage: "Please fill in all required fields.",
+  fields: {
+    name: "Full Name",
+    phone: "Phone Number",
+    instrument: "Preferred Instrument",
+    plan: "Selected Plan",
+  },
+  placeholders: {
+    name: "Enter your name",
+    phone: "Enter your phone number",
+    instrument: "Select an instrument",
+  },
+  instruments: [
+    "Drums",
+    "Guitar",
+    "Piano",
+    "Flute",
+    "Saxophone",
+    "Vocals",
+  ],
+  plans: [
+    "Free Trial",
+    "Drumming Basics",
+    "Pads Training",
+    "Vocal Training",
   ],
 };

@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { BookTrialButton } from "@/components/booking/book-trial-button";
 import { navbarData } from "../data/dummydata";
 
 
@@ -59,9 +59,9 @@ export function Navbar() {
 
         {/* CTA */}
         <div className="hidden lg:block">
-          <Button size="sm">
+          <BookTrialButton size="sm">
             {navbarData?.cta?.label}
-          </Button>
+          </BookTrialButton>
         </div>
 
         {/* Mobile Toggle */}
@@ -92,9 +92,13 @@ export function Navbar() {
               </a>
             ))}
 
-            <Button className="mt-2 w-full" size="sm">
+            <BookTrialButton
+              className="mt-2 w-full"
+              size="sm"
+              onClick={() => setOpen(false)}
+            >
               {navbarData.cta.label}
-            </Button>
+            </BookTrialButton>
           </nav>
         </div>
       )}
